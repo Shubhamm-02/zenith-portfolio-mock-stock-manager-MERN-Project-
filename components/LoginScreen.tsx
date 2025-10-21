@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { login, loginWithGoogle, getGoogleClientId, User } from '../services/authService';
 
@@ -85,24 +84,31 @@ const LoginScreen: React.FC<LoginScreenProps> = ({ onLogin }) => {
           </div>
           <p className="text-muted">Welcome to the BSE trading simulation.</p>
         </div>
+        
         {/* Google Sign-In Button */}
-        {googleClientId && (
-          <div className="mt-6">
-            <div 
-              id="g_id_onload"
-              data-client_id={googleClientId}
-              data-callback="handleGoogleSignIn"
-              data-auto_prompt="false"
-            ></div>
-            <div 
-              className="g_id_signin w-full"
-              data-type="standard"
-              data-size="large"
-              data-theme="outline"
-              data-text="sign_in_with"
-              data-shape="rectangular"
-              data-logo_alignment="left"
-            ></div>
+        <div className="mt-6">
+          <div 
+            id="g_id_onload"
+            data-client_id={googleClientId || 'demo-client-id'}
+            data-callback="handleGoogleSignIn"
+            data-auto_prompt="false"
+          ></div>
+          <div 
+            className="g_id_signin w-full"
+            data-type="standard"
+            data-size="large"
+            data-theme="outline"
+            data-text="sign_in_with"
+            data-shape="rectangular"
+            data-logo_alignment="left"
+          ></div>
+        </div>
+        
+        {!googleClientId && (
+          <div className="mt-2 p-2 bg-yellow-50 border border-yellow-200 rounded text-center">
+            <p className="text-xs text-yellow-800">
+              ⚠️ Google OAuth requires environment configuration
+            </p>
           </div>
         )}
 
