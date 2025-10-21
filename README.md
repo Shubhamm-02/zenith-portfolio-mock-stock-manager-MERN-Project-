@@ -9,7 +9,7 @@
   <h1>🚀 Zenith Portfolio - Mock Stock Manager</h1>
   <p><strong>A sophisticated, real-time stock trading simulator with AI-powered portfolio analysis</strong></p>
   
-  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" />
+
   <img src="https://img.shields.io/badge/Status-Live-brightgreen.svg" alt="Status" />
   <img src="https://img.shields.io/badge/Platform-Web-blue.svg" alt="Platform" />
 </div>
