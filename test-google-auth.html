@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Auth Test</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <h1>Google Authentication Test</h1>
+    <p>This is a simple test page to verify Google OAuth is working.</p>
+    
+    <div id="g_id_onload"
+         data-client_id="YOUR_GOOGLE_CLIENT_ID_HERE"
+         data-callback="handleCredentialResponse">
+    </div>
+    
+    <div class="g_id_signin" 
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        function handleCredentialResponse(response) {
+            console.log("Encoded JWT ID token: " + response.credential);
+            
+            // Decode the JWT token
+            const payload = JSON.parse(atob(response.credential.split('.')[1]));
+            console.log("Decoded payload:", payload);
+            
+            document.getElementById('result').innerHTML = `
+                <h2>Authentication Successful!</h2>
+                <p><strong>Name:</strong> ${payload.name}</p>
+                <p><strong>Email:</strong> ${payload.email}</p>
+                <p><strong>Picture:</strong> <img src="${payload.picture}" alt="Profile" style="width: 50px; height: 50px; border-radius: 50%;"></p>
+            `;
+        }
+    </script>
+</body>
+</html>
