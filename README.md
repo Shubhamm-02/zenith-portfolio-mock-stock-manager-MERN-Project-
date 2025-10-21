@@ -25,7 +25,7 @@
 - [📱 Screenshots](#-screenshots)
 - [🔧 Development](#-development)
 - [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+
 
 ---
 
@@ -344,33 +344,5 @@ We welcome contributions! Here's how you can help:
 - **Build Issues** - Check Node.js version compatibility
 - **API Keys** - Verify environment variables
 
----
 
-## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 Zenith Portfolio Mock Stock Manager
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
-
----
-
-<div align="center">
-  <h3>🌟 Star this repository if you found it helpful!</h3>
-  <p>Made with ❤️ by the Zenith Portfolio Team</p>
-  
-  <img src="https://img.shields.io/badge/⭐-Star%20this%20repo-yellow?style=for-the-badge" alt="Star this repo" />
-</div>
