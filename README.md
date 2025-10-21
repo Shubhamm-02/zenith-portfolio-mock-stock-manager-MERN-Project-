@@ -19,7 +19,6 @@
 ## 📋 Table of Contents
 
 - [🌟 Features](#-features)
-- [Key Features in Action] (#-key-features-in-action)
 - [🚀 Quick Start](#-quick-start)
 - [⚙️ Configuration](#️-configuration)
 - [🏗️ Architecture](#️-architecture)
