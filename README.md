@@ -344,5 +344,6 @@ We welcome contributions! Here's how you can help:
 - **Build Issues** - Check Node.js version compatibility
 - **API Keys** - Verify environment variables
 
+#### This is a MERN clg project
 
 
