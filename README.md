@@ -19,7 +19,7 @@
 ## 📋 Table of Contents
 
 - [🌟 Features](#-features)
-- [🎯 Demo](#-demo)
+- [Key Features in Action] (#-key-features-in-action)
 - [🚀 Quick Start](#-quick-start)
 - [⚙️ Configuration](#️-configuration)
 - [🏗️ Architecture](#️-architecture)
@@ -64,11 +64,7 @@
 
 ---
 
-## 🎯 Demo
-
-**Live Demo:** [http://localhost:3000](http://localhost:3000)
-
-### Key Features in Action:
+# Key Features in Action:
 - 🏠 **Dashboard** - Overview of your portfolio performance
 - 📊 **Charts** - Visual representation of your investment growth
 - 💰 **Trading** - Buy and sell stocks with real-time pricing
